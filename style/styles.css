@@ -9,3 +9,7 @@ body {
 html, body {
   background-color: black;
 }
+
+.page {
+	height:20em;
+}
