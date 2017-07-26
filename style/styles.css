@@ -7,5 +7,9 @@ body {
 
 
 html, body {
-  background-color: black;
+  background-color: gray;
+}
+
+.page {
+	height:20em;
 }
