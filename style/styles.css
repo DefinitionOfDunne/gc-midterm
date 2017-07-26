@@ -30,7 +30,7 @@ h1{
 
 
 .page {
-  height: 50em;
+  height: 100em;
 }
 /*	height:20em;
 }*/
@@ -41,4 +41,9 @@ img {
 .seat {
   display: inline-block;
   width: 20%;
+}
+
+input{
+	display:block;
+	margin-bottom:20px;
 }
