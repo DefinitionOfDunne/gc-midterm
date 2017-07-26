@@ -3,13 +3,16 @@ body {
   font-weight: 400;
   font-size: 100%;
   line-height: normal;
+  box-sizing: border-box;
 }
 
 
 html, body {
   background-color: gray;
 }
-
+h1{
+  color: white;
+}
 #welcome {
   background: url("../images/theater-banner.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -17,16 +20,25 @@ html, body {
   -o-background-size: cover;
   background-size: cover;
 }
-
+#seatContainer {
+  width: 75%;
+  margin: 0 auto;
+}
 #pageContainer {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
 
 .page {
-	height:20em;
+  height: 50em;
 }
+/*	height:20em;
+}*/
 img {
-	height: 20em;
-	width: 100%;
+	width: 5em;
+}
+
+.seat {
+  display: inline-block;
+  width: 20%;
 }
