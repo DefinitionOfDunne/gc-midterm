@@ -15,6 +15,12 @@ html, body {
 h1{
   color: white;
 }
+
+#form {
+  display: none;
+}
+
+
 #welcome {
   background: url("../images/theater-banner.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
