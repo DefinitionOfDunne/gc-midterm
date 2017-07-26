@@ -10,6 +10,19 @@ html, body {
   background-color: gray;
 }
 
+#welcome {
+  background: url("../images/theater-banner.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#pageContainer {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+
 .page {
 	height:20em;
 }
