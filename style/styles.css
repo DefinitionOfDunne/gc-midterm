@@ -1,17 +1,14 @@
 body {
   font-family: Arial, sans-serif;
-  font-weight: 400;
   font-size: 100%;
   line-height: normal;
   box-sizing: border-box;
 }
 
-h1{
-  background-color: rgba(255, 255, 255, 0.5);
-}
 html, body {
   background-color: gray;
 }
+
 h1{
   color: white;
 }
@@ -19,7 +16,6 @@ h1{
 #form {
   display: none;
 }
-
 
 #welcome {
   background: url("../images/theater-banner.jpg") no-repeat center center fixed;
@@ -54,4 +50,15 @@ img {
 input{
 	display:block;
 	margin-bottom:20px;
+}
+
+
+#welcomeContainer{
+    width: 95%;
+    height: 95%;
+    background-color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    margin: 0 auto;
+
+
 }
