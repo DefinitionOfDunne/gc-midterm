@@ -15,7 +15,7 @@ h1{
   text-transform: uppercase;
 }
 
-h2 {
+h1#instructionHeader{
   color: lightgray;
   text-shadow:9px 9px 8px #658eb9;
   text-align: center;
@@ -36,13 +36,12 @@ ul{
   color: #fff!important;
   text-shadow: none;
   border-radius: 40%;
-  border:
-  width: 60%;
+  width: 50%;
   height: 20%;
-  margin-top: 30%;
+  margin-top: 15%;
   font-family: 'Droid Serif',Georgia,"Times New Roman",serif;
   font-style: italic;
-  font: 16px;}
+  font-size: 140%;}
 
 #form {
   display: none;
@@ -66,6 +65,9 @@ ul{
 #seatContainer {
   width: 75%;
   margin: 0 auto;
+  background-color: rgba( 0, 0, 0, 0.7);
+
+  border: 5px ridge gray;
 }
 #pageContainer {
   background-color: rgba(255, 255, 255, 0.7);
@@ -158,4 +160,14 @@ li a:visited {
 
 li a:hover {
   color: lightblue;
+}
+
+input#submit {
+  background-color: #6d6e69;
+  color: #43678d;
+}
+
+input#submit:hover {
+  color: #6d6e69;
+  background-color: #43678d;
 }
