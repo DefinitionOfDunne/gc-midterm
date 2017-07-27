@@ -11,7 +11,22 @@ html, body {
 
 h1{
   color: white;
-  text-shadow: 2px 2px 8px #FF0000;
+  text-shadow: 2px 2px 8px #990121;
+}
+
+h2 {
+  color: white;
+  text-shadow:9px 9px 8px #658eb9;
+  text-align: center;
+}
+
+ul{
+  color: white;
+  /*list-style-image: url('../images/chair.png');*/
+}
+
+#mainPage {
+  background-color: black;
 }
 
 #welcomeButton {   background: #990121;
@@ -102,4 +117,25 @@ padding-top: 3em;
 
 .reserved {
 
+}
+
+form {
+    width: 33%;
+    font-size: 16px;
+    background: #43678d;
+    padding: 30px 30px 15px 30px;
+    border: 5px solid #6d6e69;
+    color: white;
+    margin: 5% auto;
+
+}
+
+footer {padding: 40px 20px;
+    background-color: #43678d;
+    text-align: center;
+}
+
+ul li a {
+  display: inline-block;
+  color: white;
 }
