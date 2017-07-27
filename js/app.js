@@ -44,20 +44,20 @@ $(document).ready(function() {
 
 
     $("#submit").on('click', function() {
-
+        $("#seat-info").empty();
         reservations.forEach(function(seat) {
-
             if ($seatReservation == seat.number) {
                 seat.name = $('#name').val();
                 seat.phone = $('#phone').val();
                 seat.email = $('#email').val();
                 seat.movie = $('#movie').val();
                 seat.time = $('#time').val();
-                seat.reserved = true;
             }
-            console.log(seat.name);
 
+            $("#seat-info").append("<p>" + seat.name + "</p>");
         });
+        $("#seat-info").append("<p>" + $seatReservation + "</p>");
+        $('#exitPage').show();
         console.log(reservations);
     });
     var $name = $('#name').val()
@@ -66,20 +66,6 @@ $(document).ready(function() {
     var $movie = $('#movie').val();
     var $time = $('#time').val();
 
-
-    $('.seat').mouseover(function() {
-        if ($(this).hasClass('reserved')) {
-            name = $(this).attr('data-lastname');
-            $(this).children('p').text(name);
-        }
-    })
-
-    //return to reserved when mouse out
-    $('.seat').mouseout(function() {
-        if ($(this).hasClass('reserved')) {
-            $(this).children('p').text('Reserved');
-        }
-    })
 
 
 

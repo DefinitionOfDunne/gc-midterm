@@ -81,6 +81,7 @@ ul{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  display: none;
 }
 #exitPage{
   display: none;
@@ -125,9 +126,16 @@ padding-top: 3em;
     }
 
 .reserved {
+<<<<<<< HEAD
  opacity: 0.7;
+=======
+opacity: .5;
+>>>>>>> d0aa730330641bc7a88bdf64399827fe4c2a6855
 }
 
+#seat-info{
+  display: block;
+}
 form {
     width: 33%;
     font-size: 16px;

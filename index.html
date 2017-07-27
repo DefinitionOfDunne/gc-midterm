@@ -3,29 +3,78 @@
 
 <head>
     <title> GC Midterm: Theatre</title>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="style/styles.css">
 </head>
 
 <body>
-	<div id="pageContainer">
-		<div id="welcome" class="page">
-        <div id="welcomeContainer" class="page">
-          <h1>Welcome to our Theater!</h1>
-			    <button id="welcomeButton">Reserve Your Seats Now!</button>
+    <div id="pageContainer">
+        <div id="welcome" class="page">
+            <div id="welcomeContainer" class="page">
+                <h1>Welcome to our Theater!</h1>
+                <button id="welcomeButton">Reserve Your Seats Now!</button>
+            </div>
         </div>
-		</div>
+        <div id="mainPage" class="page">
+            <div id="instructions">
+                <h2>Choose your seat</h2>
+                <ul>
+                    <li>Click on a seat.</li>
+                    <li>Enter your information.</li>
+                    <li>If the seat is booked, choose another seat.</li>
+                    <li>Enjoy the show!</li>
+                </ul>
+            </div>
+            <div id="seatContainer">
+                <div class="seat" data-seat="1" id="one"> <img src="images/chair.png"></div>
+                <div class="seat" data-seat="2" id="two"> <img src="images/chair.png"></div>
+                <div class="seat" data-seat="3" id="three"> <img src="images/chair.png"></div>
+                <div class="seat" data-seat="4" id="four"><img src="images/chair.png"></div>
+                <div class="seat" data-seat="5" id="five"><img src="images/chair.png"></div>
+                <div class="seat" data-seat="6" id="six"><img src="images/chair.png"></div>
+                <div class="seat" data-seat="7" id="seven"><img src="images/chair.png"></div>
+                <div class="seat" data-seat="8" id="eight"><img src="images/chair.png"></div>
+                <div class="seat" data-seat="9" id="nine"><img src="images/chair.png"></div>
+                <div class="seat" data-seat="10" id="ten"><img src="images/chair.png"></div>
+                <div class="seat" data-seat="11" id="eleven"><img src="images/chair.png"></div>
+                <div class="seat" data-seat="12" id="twelve"><img src="images/chair.png"></div>
+                <div class="seat" data-seat="13" id="thirteen"><img src="images/chair.png"></div>
+                <div class="seat" data-seat="14" id="fourteen"><img src="images/chair.png"></div>
+                <div class="seat" data-seat="15" id="fifteen"><img src="images/chair.png"></div>
+                <div class="seat" data-seat="16" id="sixteen"><img src="images/chair.png"></div>
+                <div class="seat" data-seat="17" id="seventeen"><img src="images/chair.png"></div>
+                <div class="seat" data-seat="18" id="eighteen"><img src="images/chair.png"></div>
+                <div class="seat" data-seat="19" id="nineteen"><img src="images/chair.png"></div>
+                <div class="seat" data-seat="20" id="twenty"><img src="images/chair.png"></div>
+                <div class="seat" data-seat="21" id="twentyOne"><img src="images/chair.png"></div>
+                <div class="seat" data-seat="22" id="twentyTwo"><img src="images/chair.png"></div>
+                <div class="seat" data-seat="23" id="twentyThree"><img src="images/chair.png"></div>
+                <div class="seat" data-seat="24" id="twentyFour"><img src="images/chair.png"></div>
+            </div>
+            <div>
+                <form id="form">
+                    Name:
+                    <input id="name" type="text" name="Name"> Phone#:
+                    <input id="phone" type="tel" name="phone number"> E-mail:
+                    <input id="email" type="text" name="e-mail"> Movie Title:
+                    <input id="movie" type="text" name="movie title"> Time Showing:
+                    <input id="time" type="time" name="time">
+                    <input type="button" id="submit" value="Find Tickets">
+                </form>
+            </div>
+        </div>
+        <div id="exitPage" class="page">
+        	<p id="seat-info"></p>
+            <p>Enjoy The Show!</p>
+            <button>Need More Seats?</button>
+        </div>
+    </div>
+    <div id="bookedReso" style="position: fixed"></div>
 
 		<div id="mainPage" class="page">
 
       <div id="instructions">
       <h1 id="instructionHeader">Choose your seat</h1>
-        <ul>
-          <li>Click on a seat.</li>
-          <li>Enter your information.</li>
-          <li>If the seat is booked, choose another seat.</li>
-          <li>Enjoy the show!</li>
-        </ul>
       </div>
 			<div id="seatContainer">
 
