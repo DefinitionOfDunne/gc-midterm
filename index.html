@@ -19,7 +19,7 @@
 		<div id="mainPage" class="page">
 
       <div id="instructions">
-      <h2>Choose your seat</h2>
+      <h1 id="instructionHeader">Choose your seat</h1>
         <ul>
           <li>Click on a seat.</li>
           <li>Enter your information.</li>
@@ -57,11 +57,11 @@
 
 		    <div>
 		    	<form  id="form">
-		    		Name: <input id="name" type="text" name="Name">
-		    		Phone#: <input id="phone" type="tel" name="phone number">
-		    		E-mail: <input id="email" type="text" name="e-mail">
-		    		Movie Title: <input id="movie" type="text" name="movie title">
-		    		Time Showing: <input id="time" type="time" name="time">
+		    		Name: <input id="name" type="text" name="Name" required placeholder="Your Name">
+		    		Phone#: <input id="phone" type="tel" name="phone number"required placeholder="Your Phone #">
+		    		E-mail: <input id="email" type="text" name="e-mail"required placeholder="Your E-mail">
+		    		Movie Title: <input id="movie" type="text" name="movie title"required placeholder="Choose a Movie">
+		    		Time Showing: <input id="time" type="time" name="time"required>
 						<input type="button" id="submit">
 		    	</form>
 		    </div>
