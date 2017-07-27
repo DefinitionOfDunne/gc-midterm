@@ -6,7 +6,10 @@ $(document).ready(function() {
     var $seatIndex;
     var seat;
 
-    function countSeats() {
+
+    intializeSeatsArray();
+
+    function intializeSeatsArray() {
 
         for (var i = 1; i <= 24; i++) {
 
@@ -33,7 +36,6 @@ $(document).ready(function() {
 
     $(".seat").on('click', function() {
         $("#form").show();
-        countSeats();
         $seatReservation = $(this).attr("data-seat");
         $(this).addClass("reserved");
         document.getElementById("form").reset();
