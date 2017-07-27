@@ -1,37 +1,76 @@
 $(document).ready(function(){
-
 console.log( "ready!" );
 
 var reservations= [];
 var $seatReservation= "";
+var seat;
+
+function countSeats(){
+
+	for (var i =1; i <= 24; i++){
+
+  			seat = {
+  				name:"",
+  				phone: "",
+  				email: "",
+  				movie: "",
+  				time: "",
+  				number: i };
+  			reservations.push(seat);
+
+  		}
+}
+
+
 
   $(".seat").on('click', function() {
     $("#form").show();
-	   $seatReservation = $(this).attr("id");
-     //reservations.push({seat: $seatReservation});
+	countSeats();
+	$seatReservation = $(this).attr("data-seat");
+	document.getElementById("form").reset();
   });
 
+
+
   $("#submit").on('click', function() {
-    var $name = $('#name').val();
-    var $phone = $('#phone').val();
-    var $email = $('#email').val();
-    var $movie = $('#movie').val();
-    var $time = $('#time').val();
 
-    reservations.push(
-      {name: $name,
-      phone: $phone,
-      email: $email,
-      movie: $movie,
-      time: $time})
+   reservations.forEach(function(seat){
 
-      for (var i = 0; i < reservations.length; i++) {
-        var name = reservations[i].name;
-      console.log(name);}
+    	if ($seatReservation == seat.number){
+    		seat.name = $('#name').val();
+    		seat.phone = $('#phone').val();
+    		seat.email = $('#email').val();
+    		seat.movie = $('#movie').val();
+    		seat.time = $('#time').val();
 
+    	}
 
+console.log(seat.name);
 
-console.log(reservations);
 
     });
-});
+		var $name = $('#name').val()
+		var $phone = $('#phone').val();
+		var $email = $('#email').val();
+		var $movie = $('#movie').val();
+		var $time = $('#time').val();
+
+
+
+	      // 	reservations.push(
+		     //  { name: $name,
+		     //    phone: $phone,
+			    // email: $email,
+			    // movie: $movie,
+			    // time: $time }
+
+	// );
+
+
+
+
+
+		console.log(reservations);
+		});
+
+}); // end .ready() function
