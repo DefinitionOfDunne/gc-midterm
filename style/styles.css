@@ -16,7 +16,7 @@ h1 {
     text-transform: uppercase;
 }
 
-h1#instructionHeader {
+h2 {
     color: lightgray;
     text-shadow: 9px 9px 8px #658eb9;
     text-align: center;
