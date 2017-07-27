@@ -16,14 +16,14 @@ h1{
 }
 
 h2 {
-  color: gray;
+  color: lightgray;
   text-shadow:9px 9px 8px #658eb9;
   text-align: center;
   text-transform: uppercase;
 }
 
 ul{
-  color: gray;
+  color: lightgray;
   /*list-style-image: url('../images/chair.png');*/
 }
 
@@ -73,7 +73,12 @@ ul{
 }
 
 #mainPage{
-  display: none;
+  /*display: none; */
+  background: url("../images/blueCurtain.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 #exitPage{
   display: none;
