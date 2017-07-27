@@ -130,6 +130,7 @@ footer {padding: 40px 20px;
     text-align: center;
 }
 
-.socialMedia {
+ul li a {
   display: inline-block;
+  color: white;
 }
