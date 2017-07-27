@@ -23,6 +23,12 @@ $(document).ready(function() {
         }
     }
 
+    $("#welcomeButton").on('click', function() {
+        $("#welcome").hide();
+        $("#mainPage").show();
+    });
+
+
 
 
     $(".seat").on('click', function() {
@@ -59,19 +65,19 @@ $(document).ready(function() {
     var $time = $('#time').val();
 
 
-  $('.seat').mouseover(function() {
-    if ( $(this).hasClass('reserved') ) {
-      name = $(this).attr('data-lastname');
-      $(this).children('p').text(name);
-    }
-  })
+    $('.seat').mouseover(function() {
+        if ($(this).hasClass('reserved')) {
+            name = $(this).attr('data-lastname');
+            $(this).children('p').text(name);
+        }
+    })
 
-  //return to reserved when mouse out
-  $('.seat').mouseout(function() {
-    if ( $(this).hasClass('reserved') ) {
-      $(this).children('p').text('Reserved');
-    }
-  })
+    //return to reserved when mouse out
+    $('.seat').mouseout(function() {
+        if ($(this).hasClass('reserved')) {
+            $(this).children('p').text('Reserved');
+        }
+    })
 
 
 

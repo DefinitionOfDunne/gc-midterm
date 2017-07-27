@@ -55,7 +55,12 @@ h1{
   border: 5px,
 }
 
-
+#mainPage{
+  display: none;
+}
+#exitPage{
+  display: none;
+}
 .page {
   height: 100em;
 }
