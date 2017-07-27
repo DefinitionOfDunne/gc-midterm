@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Droid Serif',Georgia,"Times New Roman",serif;
   font-size: 100%;
   line-height: normal;
   box-sizing: border-box;
@@ -11,10 +11,32 @@ html, body {
 
 h1{
   color: white;
+  text-shadow: 2px 2px 8px #FF0000;
 }
+
+#welcomeButton {   background: #990121;
+  border: 5px ridge white;
+  color: #fff!important;
+  text-shadow: none;
+  border-radius: 40%;
+  border:
+  width: 60%;
+  height: 20%;
+  margin-top: 30%;
+  font-family: 'Droid Serif',Georgia,"Times New Roman",serif;
+  font-style: italic;
+  font: 16px;}
 
 #form {
   display: none;
+}
+
+#instructions {
+
+  margin: 5% auto;
+  float: center;
+  width: 50%;
+  padding: 0.5%;
 }
 
 #welcome {
@@ -30,6 +52,7 @@ h1{
 }
 #pageContainer {
   background-color: rgba(255, 255, 255, 0.7);
+  border: 5px,
 }
 
 
@@ -55,10 +78,23 @@ input{
 
 #welcomeContainer{
     width: 95%;
-    height: 95%;
+    height: 25%;
     background-color: rgba(255, 255, 255, 0.4);
     text-align: center;
     margin: 0 auto;
+    border: 5px ridge  #990121}
 
+footer
+{
+background: black;
+width: 940px;
+max-width: 100%;
+min-width: 768px;
+margin: 0 auto;
+padding: 0 0;
+padding-top: 3em;
+    }
+
+.reserved {
 
 }

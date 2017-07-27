@@ -8,7 +8,7 @@ var $seatReservation= "";
   $(".seat").on('click', function() {
     $("#form").show();
 	   $seatReservation = $(this).attr("id");
-     reservations.push({seat: $seatReservation});
+     //reservations.push({seat: $seatReservation});
   });
 
   $("#submit").on('click', function() {
@@ -19,15 +19,19 @@ var $seatReservation= "";
     var $time = $('#time').val();
 
     reservations.push(
-      {name: $name},
-      {phone: $phone},
-      {email: $email},
-      {movie: $movie},
-      {time: $time}
-  );
+      {name: $name,
+      phone: $phone,
+      email: $email,
+      movie: $movie,
+      time: $time})
+
+      for (var i = 0; i < reservations.length; i++) {
+        var name = reservations[i].name;
+      console.log(name);}
+
 
 
 console.log(reservations);
-});
 
+    });
 });
