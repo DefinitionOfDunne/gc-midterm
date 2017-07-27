@@ -3,6 +3,7 @@ $(document).ready(function() {
 
     var reservations = [];
     var $seatReservation = "";
+    var $seatIndex;
     var seat;
 
     function countSeats() {
@@ -28,6 +29,7 @@ $(document).ready(function() {
         $("#form").show();
         countSeats();
         $seatReservation = $(this).attr("data-seat");
+        $(this).addClass("reserved");
         document.getElementById("form").reset();
     });
 
@@ -43,35 +45,38 @@ $(document).ready(function() {
                 seat.email = $('#email').val();
                 seat.movie = $('#movie').val();
                 seat.time = $('#time').val();
-
+                seat.reserved = true;
             }
-
             console.log(seat.name);
 
-
         });
-        var $name = $('#name').val()
-        var $phone = $('#phone').val();
-        var $email = $('#email').val();
-        var $movie = $('#movie').val();
-        var $time = $('#time').val();
-
-
-
-        //  reservations.push(
-        //  { name: $name,
-        //    phone: $phone,
-        // email: $email,
-        // movie: $movie,
-        // time: $time }
-
-        // );
-
-
-
-
-
         console.log(reservations);
     });
+    var $name = $('#name').val()
+    var $phone = $('#phone').val();
+    var $email = $('#email').val();
+    var $movie = $('#movie').val();
+    var $time = $('#time').val();
 
-}); // end .ready() function
+
+  $('.seat').mouseover(function() {
+    if ( $(this).hasClass('reserved') ) {
+      name = $(this).attr('data-lastname');
+      $(this).children('p').text(name);
+    }
+  })
+
+  //return to reserved when mouse out
+  $('.seat').mouseout(function() {
+    if ( $(this).hasClass('reserved') ) {
+      $(this).children('p').text('Reserved');
+    }
+  })
+
+
+
+
+
+});
+
+// end .ready() function
