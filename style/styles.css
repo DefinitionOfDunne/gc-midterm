@@ -11,17 +11,19 @@ html, body {
 
 h1{
   color: white;
-  text-shadow: 2px 2px 8px #990121;
+  text-shadow: 9px 9px 8px #990121;
+  text-transform: uppercase;
 }
 
 h2 {
-  color: white;
+  color: gray;
   text-shadow:9px 9px 8px #658eb9;
   text-align: center;
+  text-transform: uppercase;
 }
 
 ul{
-  color: white;
+  color: gray;
   /*list-style-image: url('../images/chair.png');*/
 }
 
@@ -128,9 +130,18 @@ form {
 footer {padding: 40px 20px;
     background-color: #43678d;
     text-align: center;
+    color: lightgray;
 }
 
 ul li a {
   display: inline-block;
+  color: lightgray;
+}
+
+li a:visited {
   color: white;
+}
+
+li a:hover {
+  color: lightblue;
 }
