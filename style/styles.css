@@ -125,7 +125,7 @@ padding-top: 3em;
     }
 
 .reserved {
-
+ opacity: 0.7;
 }
 
 form {
@@ -159,11 +159,12 @@ li a:hover {
 }
 
 input#submit {
-  background-color: #6d6e69;
+  background-color: lightgray;
   color: #43678d;
+  font-size: 130%;
 }
 
 input#submit:hover {
-  color: #6d6e69;
+  color: lightgray;
   background-color: #43678d;
 }
