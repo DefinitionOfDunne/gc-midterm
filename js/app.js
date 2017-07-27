@@ -1,4 +1,4 @@
-$(document).ready(function()
+$(document).ready(function(){
 
 console.log( "ready!" );
 
@@ -28,4 +28,6 @@ var $seatReservation= "";
 
 
 console.log(reservations);
+});
+
 });
