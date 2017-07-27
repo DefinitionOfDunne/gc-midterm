@@ -1,137 +1,148 @@
 body {
-  font-family: 'Droid Serif',Georgia,"Times New Roman",serif;
-  font-size: 100%;
-  line-height: normal;
-  box-sizing: border-box;
+    font-family: 'Droid Serif', Georgia, "Times New Roman", serif;
+    font-size: 100%;
+    line-height: normal;
+    box-sizing: border-box;
 }
 
-html, body {
-  background-color: gray;
+html,
+body {
+    background-color: gray;
 }
 
-h1{
-  color: white;
-  text-shadow: 9px 9px 8px #990121;
-  text-transform: uppercase;
+h1 {
+    color: white;
+    text-shadow: 9px 9px 8px #990121;
+    text-transform: uppercase;
 }
 
-h1#instructionHeader{
-  color: lightgray;
-  text-shadow:9px 9px 8px #658eb9;
-  text-align: center;
-  text-transform: uppercase;
+h2 {
+    color: lightgray;
+    text-shadow: 9px 9px 8px #658eb9;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-ul{
-  color: lightgray;
-  /*list-style-image: url('../images/chair.png');*/
+ul {
+    color: lightgray;
+    /*list-style-image: url('../images/chair.png');*/
 }
 
 #mainPage {
-  background-color: black;
+    background-color: black;
 }
 
-#welcomeButton {   background: #990121;
-  border: 5px ridge white;
-  color: #fff!important;
-  text-shadow: none;
-  border-radius: 40%;
-  width: 50%;
-  height: 20%;
-  margin-top: 15%;
-  font-family: 'Droid Serif',Georgia,"Times New Roman",serif;
-  font-style: italic;
-  font-size: 140%;}
+#welcomeButton {
+    background: #990121;
+    border: 5px ridge white;
+    color: #fff!important;
+    text-shadow: none;
+    border-radius: 40%;
+    width: 50%;
+    height: 20%;
+    margin-top: 15%;
+    font-family: 'Droid Serif', Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-size: 140%;
+}
 
 #form {
-  display: none;
+    display: none;
 }
 
 #instructions {
 
-  margin: 5% auto;
-  float: center;
-  width: 50%;
-  padding: 0.5%;
+    margin: 5% auto;
+    float: center;
+    width: 50%;
+    padding: 0.5%;
 }
 
 #welcome {
-  background: url("../images/theater-banner.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background: url("../images/theater-banner.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
+
 #seatContainer {
-  width: 75%;
-  margin: 0 auto;
-  background-color: rgba( 0, 0, 0, 0.7);
+    width: 75%;
+    margin: 0 auto;
+    background-color: rgba( 0, 0, 0, 0.7);
 
-  border: 5px ridge gray;
+    border: 5px ridge gray;
 }
+
 #pageContainer {
-  background-color: rgba(255, 255, 255, 0.7);
-  border: 5px,
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 5px,
 }
 
-#mainPage{
-  /*display: none; */
-  background: url("../images/blueCurtain.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  display: none;
+#mainPage {
+    /*display: none; */
+    background: url("../images/blueCurtain.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: none;
 }
-#exitPage{
-  display: none;
+
+#exitPage {
+    display: none;
 }
+
 .page {
-  height: 100em;
+    height: 100em;
 }
-/*	height:20em;
+
+
+/*  height:20em;
 }*/
+
 img {
-	width: 5em;
+    width: 5em;
 }
 
 .seat {
-  display: inline-block;
-  width: 20%;
+    display: inline-block;
+    width: 20%;
 }
 
-input{
-	display:block;
-	margin-bottom:20px;
+input {
+    display: block;
+    margin-bottom: 20px;
 }
 
 
-#welcomeContainer{
+#welcomeContainer {
     width: 95%;
     height: 25%;
     background-color: rgba(255, 255, 255, 0.4);
     text-align: center;
     margin: 0 auto;
-    border: 5px ridge  #990121}
+    border: 5px ridge #990121
+}
 
-footer
-{
-background: black;
-width: 940px;
-max-width: 100%;
-min-width: 768px;
-margin: 0 auto;
-padding: 0 0;
-padding-top: 3em;
-    }
+footer {
+    background: black;
+    width: 940px;
+    max-width: 100%;
+    min-width: 768px;
+    margin: 0 auto;
+    padding: 0 0;
+    padding-top: 3em;
+}
 
 .reserved {
-opacity: .5;
+    opacity: 0.7;
 }
 
-#seat-info{
-  display: block;
+#seat-info {
+    display: block;
 }
+
 form {
     width: 33%;
     font-size: 16px;
@@ -140,34 +151,35 @@ form {
     border: 5px solid #6d6e69;
     color: white;
     margin: 5% auto;
-
 }
 
-footer {padding: 40px 20px;
+footer {
+    padding: 40px 20px;
     background-color: #43678d;
     text-align: center;
     color: lightgray;
 }
 
 ul li a {
-  display: inline-block;
-  color: lightgray;
+    display: inline-block;
+    color: lightgray;
 }
 
 li a:visited {
-  color: white;
+    color: white;
 }
 
 li a:hover {
-  color: lightblue;
+    color: lightblue;
 }
 
 input#submit {
-  background-color: #6d6e69;
-  color: #43678d;
+    background-color: lightgray;
+    color: #43678d;
+    font-size: 130%;
 }
 
 input#submit:hover {
-  color: #6d6e69;
-  background-color: #43678d;
+    color: lightgray;
+    background-color: #43678d;
 }
